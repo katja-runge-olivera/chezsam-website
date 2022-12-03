@@ -1,0 +1,23 @@
+@use '../../styles/constants.scss' as *;
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 40px;
+    background-color: $mainBackgroundColor;
+    position: sticky;
+}
+
+.navList {
+    display: flex;
+    align-items: center;
+}
+
+.navItem {
+    a {
+        text-decoration: none;
+        margin-right: 20px;
+        color: $textColor;
+    }
+
+}
