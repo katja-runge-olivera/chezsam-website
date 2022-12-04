@@ -5,7 +5,10 @@
     justify-content: space-between;
     padding: 25px 40px;
     background-color: $mainBackgroundColor;
-    position: sticky;
+    position: fixed;
+    box-sizing: border-box;
+    z-index: 1;
+    width: 100%;
 }
 
 .navList {

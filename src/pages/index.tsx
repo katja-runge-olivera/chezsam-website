@@ -1,7 +1,8 @@
 import * as React from "react"
 import type { PageProps } from "gatsby"
 
-import { Header } from "../components/Header"
+import { Header } from "../components/Header";
+import { Hero } from "../components/Hero";
 
 import '../styles/index.scss'
 
@@ -17,6 +18,7 @@ const IndexPage: React.FC<PageProps> = () => {
       </head>
       <body>
         <Header />
+        <Hero />
       </body>
     </React.Fragment>
   )
