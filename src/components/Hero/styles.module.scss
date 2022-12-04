@@ -5,7 +5,7 @@
     flex-direction: column-reverse;
     background-color: $mainBackgroundColor;
     height: 100%;
-    padding: 110px 20px 20px;
+    padding: 90px 20px 40px;
 
     @media (min-width: 991px) {
         flex-direction: row;
@@ -37,6 +37,11 @@
         }
 
         @media (min-width: 1080px) {
+            max-width: 300px;
+            max-height: 300px;
+        }
+
+        @media (min-width: 1600px) {
             max-width: 350px;
             max-height: 350px;
         }
@@ -68,9 +73,12 @@
         line-height: 125%;
         text-align: center;
         color: $textColor;
-        padding-top: 20px;
+        padding-top: 10px;
 
         @media (min-width: 768px) {
+            width: 80%;
+            padding-top: 20px;
+            margin: 0 auto;
             font-size: 18px;
         }
 
@@ -90,9 +98,10 @@
     }
 
     .image {
-        height: 450px;
+        height: 350px;
+        object-position: top;
 
-        @media (min-width: 768px) {
+        @media (min-width: 991px) {
             height: auto;
         }
     }

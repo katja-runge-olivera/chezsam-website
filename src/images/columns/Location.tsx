@@ -6,5 +6,5 @@ type ImageProps = {
 }
 
 export const HeroImage = ({ classes }: ImageProps) => {
-    return <StaticImage src="./hero-image.jpg" alt="A dinosaur" layout="constrained" className={classes} />
+    return <StaticImage src="../hero-image.jpg" alt="A dinosaur" layout="constrained" className={classes} />
 }

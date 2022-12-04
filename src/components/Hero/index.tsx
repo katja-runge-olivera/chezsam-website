@@ -1,6 +1,6 @@
 import React from "react";
 
-import { HeroImage } from "../../images/HeroImage";
+import { HeroImage } from "../../images/hero/HeroImage";
 
 import * as styles from './styles.module.scss'
 
