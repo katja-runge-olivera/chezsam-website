@@ -1,0 +1,55 @@
+.root {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    box-sizing: border-box;
+    color: #fff;
+
+    @media (min-width: 768px) {
+        flex-direction: row;
+        padding: 40px 40px 60px;
+    }
+
+    :last-child {
+        margin-right: 0;
+        margin-bottom: 0;
+    }
+}
+
+.column {
+    box-sizing: border-box;
+    margin-bottom: 50px;
+
+    @media (min-width: 768px) {
+        margin-right: 20px;
+        margin-bottom: 0;
+    }
+
+    @media (min-width: 1080px) {
+        margin-right: 40px;
+    }
+}
+
+.title {
+    font-size: 25px;
+    flex: 1;
+    margin-top: 40px;
+
+    @media (min-width: 768px) {
+        font-size: 20px;
+    }
+
+    @media (min-width: 1080px) {
+        font-size: 30px;
+        margin-top: 40px;
+    }
+}
+
+.text {
+    margin-top: 20px;
+}
+
+.button {
+    text-align: center;
+    margin-top: 40px;
+}

@@ -5,10 +5,11 @@ type ButtonProps = {
     buttonLabel: string;
     buttonHref: string;
     buttonColor?: string;
+    className?: string;
 }
 
-export const Button = ({ buttonLabel, buttonHref, buttonColor }: ButtonProps) => {
-    const classes = `${styles.button} ${styles[buttonColor as string]}`;
+export const Button = ({ buttonLabel, buttonHref, buttonColor, className }: ButtonProps) => {
+    const classes = `${styles.button} ${styles[buttonColor as string]} ${className}`;
     return (
         <a href={buttonHref} className={classes}>
             {buttonLabel}

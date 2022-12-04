@@ -2,9 +2,9 @@ import React from "react"
 import { StaticImage } from "gatsby-plugin-image"
 
 type ImageProps = {
-    classes: string;
+    classes?: string;
 }
 
-export const HeroImage = ({ classes }: ImageProps) => {
-    return <StaticImage src="../hero-image.jpg" alt="A dinosaur" layout="constrained" className={classes} />
+export const Location = ({ classes }: ImageProps) => {
+    return <StaticImage src="../location.jpg" alt="location" className={classes} />
 }
