@@ -1,0 +1,19 @@
+@use '../../styles/constants.scss' as *;
+
+.root {
+    background-color: rgba(white, 0.1);
+    padding: 20px;
+}
+
+.title {
+    margin-bottom: $stdOffset;
+}
+
+.content {
+    display: grid;
+    grid-gap: $stdOffset;
+
+    @media (min-width: 992px) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

@@ -3,22 +3,17 @@ import React from 'react';
 import ReactMarkdown from 'react-markdown';
 import { DefaultHead } from '../components/DefaultHead';
 import { Layout } from '../components/Layout';
+import { MenuItem } from '../components/MenuItem';
+import { MenuItemList } from '../components/MenuItemList';
 
 const MenuPage = ({ data }: PageProps<Queries.Query>) => (
     <Layout>
         <h1>Menü</h1>
-        <div>
-            {data.allContentfulMenuItem.edges.map(({ node }) => (
-                <div key={node.id}>
-                    <h2>{node.title}</h2>
-                    {node.description?.description && (
-                        <ReactMarkdown>
-                            {node.description.description}
-                        </ReactMarkdown>
-                    )}
-                </div>
-            ))}
-        </div>
+        <MenuItemList
+            menuItems={data.allContentfulMenuItem.edges.map(
+                (item) => item.node
+            )}
+        />
     </Layout>
 );
 

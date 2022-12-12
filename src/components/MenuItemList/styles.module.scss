@@ -1,0 +1,11 @@
+@use '../../styles/constants.scss' as *;
+
+.root {
+    margin-top: $stdOffset * 2;
+    display: grid;
+    grid-gap: $stdOffset;
+
+    @media (min-width: 768px) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
