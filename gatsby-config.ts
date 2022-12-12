@@ -1,5 +1,5 @@
-import type { GatsbyConfig } from "gatsby";
-import * as dotenv from "dotenv";
+import type { GatsbyConfig } from 'gatsby';
+import * as dotenv from 'dotenv';
 
 dotenv.config({
     path: `.env.${process.env.NODE_ENV}`,
@@ -15,10 +15,10 @@ const config: GatsbyConfig = {
     // Learn more at: https://gatsby.dev/graphql-typegen
     graphqlTypegen: true,
     plugins: [
-        "gatsby-plugin-sass",
-        "gatsby-plugin-image",
-        "gatsby-plugin-sharp",
-        "gatsby-transformer-sharp",
+        'gatsby-plugin-sass',
+        'gatsby-plugin-image',
+        'gatsby-plugin-sharp',
+        'gatsby-transformer-sharp',
         {
             resolve: `gatsby-source-contentful`,
             options: {
