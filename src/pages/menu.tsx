@@ -1,9 +1,7 @@
 import { graphql, PageProps } from 'gatsby';
 import React from 'react';
-import ReactMarkdown from 'react-markdown';
 import { DefaultHead } from '../components/DefaultHead';
 import { Layout } from '../components/Layout';
-import { MenuItem } from '../components/MenuItem';
 import { MenuItemList } from '../components/MenuItemList';
 
 const MenuPage = ({ data }: PageProps<Queries.Query>) => (
