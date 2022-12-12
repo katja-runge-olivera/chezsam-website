@@ -7,7 +7,7 @@ export const Columns = () => (
     <div className={styles.root}>
         <div>
             <StaticImage
-                src="../location.jpg"
+                src="../../images/location.jpg"
                 alt="Mitten in Altona, Große Bergstraße 199a, 22767 Hamburg"
             />
             <h3 className={styles.title}>Mitten in Altona</h3>
@@ -23,7 +23,10 @@ export const Columns = () => (
             />
         </div>
         <div>
-            <StaticImage src="../dishes.jpg" alt="Regionale Produkte" />
+            <StaticImage
+                src="../../images/dishes.jpg"
+                alt="Regionale Produkte"
+            />
             <h3 className={styles.title}>Regionale Produkte</h3>
             <p className={styles.text}>
                 Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
@@ -37,7 +40,7 @@ export const Columns = () => (
             />
         </div>
         <div>
-            <StaticImage src="../menu.jpg" alt="Menü" />
+            <StaticImage src="../../images/menu.jpg" alt="Menü" />
             <h3 className={styles.title}>Saisonale Gerichte</h3>
             <p className={styles.text}>
                 Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
