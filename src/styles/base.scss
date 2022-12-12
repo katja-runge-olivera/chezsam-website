@@ -1,0 +1,10 @@
+@use './constants.scss' as *;
+
+html {
+    overflow-y: scroll;
+}
+
+body {
+    background-color: $mainBackgroundColor;
+    color: $textColor;
+}
