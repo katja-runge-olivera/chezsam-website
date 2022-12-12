@@ -1,3 +1,4 @@
+import { Link } from 'gatsby';
 import React from 'react';
 import { Button } from '../Button';
 import * as styles from './styles.module.scss';
@@ -11,7 +12,7 @@ export const Header = () => {
                         <a href="/">Home</a>
                     </li>
                     <li className={styles.navItem}>
-                        <a href="#menu">Menu</a>
+                        <Link to="/menu">Menu</Link>
                     </li>
                     <li className={styles.navItem}>
                         <a href="#reservieren">Reservieren</a>
