@@ -54,7 +54,7 @@ export const Hero = () => (
         </div>
         <div className={styles.imageContainer}>
             <StaticImage
-                src="../hero-image.jpg"
+                src="../../images/hero-image.jpg"
                 alt="A dinosaur"
                 layout="constrained"
                 className={styles.image}

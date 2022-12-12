@@ -1,5 +1,6 @@
 @use '../../styles/constants.scss' as *;
 @use '../../styles/mixins.scss' as *;
+@use '../../styles/breakpoints.scss' as *;
 
 .root {
     position: fixed;
@@ -23,7 +24,7 @@
 .desktopNavigation {
     display: none;
 
-    @media (min-width: 768px) {
+    @include md {
         display: initial;
     }
 }
@@ -32,7 +33,7 @@
     height: 100%;
     align-self: center;
 
-    @media (min-width: 768px) {
+    @include md {
         display: none;
     }
 

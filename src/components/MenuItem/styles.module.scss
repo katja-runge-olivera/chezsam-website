@@ -1,4 +1,5 @@
 @use '../../styles/constants.scss' as *;
+@use '../../styles/breakpoints.scss' as *;
 
 .root {
     background-color: rgba(white, 0.1);
@@ -13,7 +14,7 @@
     display: grid;
     grid-gap: $stdOffset;
 
-    @media (min-width: 992px) {
+    @include lg {
         grid-template-columns: repeat(2, 1fr);
     }
 }

@@ -1,9 +1,11 @@
+@use '../../styles/breakpoints.scss' as *;
+
 .root {
     display: grid;
     margin-top: 50px;
     grid-gap: 20px 40px;
 
-    @media (min-width: 768px) {
+    @include md {
         grid-template-columns: repeat(3, 1fr);
     }
 }
@@ -13,11 +15,11 @@
     flex: 1;
     margin-top: 40px;
 
-    @media (min-width: 768px) {
+    @include md {
         font-size: 20px;
     }
 
-    @media (min-width: 1080px) {
+    @include lg {
         font-size: 30px;
         margin-top: 40px;
     }
