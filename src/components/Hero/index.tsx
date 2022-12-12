@@ -1,7 +1,5 @@
 import React from 'react';
-
-import { HeroImage } from '../../images/hero/HeroImage';
-
+import { StaticImage } from 'gatsby-plugin-image';
 import * as styles from './styles.module.scss';
 
 export const Hero = () => (
@@ -55,7 +53,13 @@ export const Hero = () => (
             </p>
         </div>
         <div className={styles.imageContainer}>
-            <HeroImage classes={styles.image} />
+            <StaticImage
+                src="../hero-image.jpg"
+                alt="A dinosaur"
+                layout="constrained"
+                className={styles.image}
+                objectPosition="top"
+            />
         </div>
     </div>
 );
