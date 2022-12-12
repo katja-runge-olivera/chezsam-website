@@ -8,7 +8,7 @@ import * as styles from './styles.module.scss';
 
 export const Columns = () => (
     <div className={styles.root}>
-        <div className={styles.column}>
+        <div>
             <Location />
             <h3 className={styles.title}>Mitten in altona</h3>
             <p className={styles.text}>
@@ -22,7 +22,7 @@ export const Columns = () => (
                 className={styles.button}
             />
         </div>
-        <div className={styles.column}>
+        <div>
             <Dishes />
             <h3 className={styles.title}>Regionale Producte</h3>
             <p className={styles.text}>
@@ -36,7 +36,7 @@ export const Columns = () => (
                 className={styles.button}
             />
         </div>
-        <div className={styles.column}>
+        <div>
             <Menu />
             <h3 className={styles.title}>Seasonale Gerichte</h3>
             <p className={styles.text}>

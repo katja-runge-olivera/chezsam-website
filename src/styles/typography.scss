@@ -10,5 +10,7 @@ h6 {
 }
 
 body {
+    background-color: $mainBackgroundColor;
     font-family: $textFontFamily;
+    color: $textColor;
 }

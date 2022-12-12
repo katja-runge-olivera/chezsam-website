@@ -3,14 +3,10 @@
 .root {
     display: flex;
     flex-direction: column-reverse;
-    background-color: $mainBackgroundColor;
-    height: 100%;
-    padding: 90px 20px 40px;
 
     @media (min-width: 991px) {
         flex-direction: row;
         justify-content: space-between;
-        padding: 110px 40px 60px;
     }
 }
 

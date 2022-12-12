@@ -1,36 +1,24 @@
-import * as React from 'react';
-import type { PageProps } from 'gatsby';
-
-import { Header } from '../components/Header';
+import React from 'react';
+import { Layout } from '../components/Layout';
 import { Hero } from '../components/Hero';
 import { Columns } from '../components/Columns';
+import { DefaultHead } from '../components/DefaultHead';
 
-import * as styles from './styles.module.scss';
-
-import '../styles/index.scss';
-
-const IndexPage: React.FC<PageProps> = () => {
+export default function IndexPage() {
     return (
-        <React.Fragment>
-            <head>
-                <link rel="preconnect" href="https://fonts.googleapis.com" />
-                <link rel="preconnect" href="https://fonts.gstatic.com" />
-                <link
-                    href="https://fonts.googleapis.com/css2?family=Volkhov:wght@700&display=swap"
-                    rel="stylesheet"
-                />
-                <link
-                    href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap"
-                    rel="stylesheet"
-                />
-            </head>
-            <body className={styles.root}>
-                <Header />
+        <Layout>
+            <>
                 <Hero />
                 <Columns />
-            </body>
-        </React.Fragment>
+            </>
+        </Layout>
     );
-};
+}
 
-export default IndexPage;
+export function Head() {
+    return (
+        <DefaultHead>
+            <title>ChezSam Restaurant</title>
+        </DefaultHead>
+    );
+}
