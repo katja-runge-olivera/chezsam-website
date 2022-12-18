@@ -4,11 +4,11 @@
     display: grid;
     margin-top: 50px;
     grid-gap: 20px 40px;
-    margin: 40px 20px;
+    margin: 40px 20px 60px;
 
     @media (min-width: 768px) {
         grid-template-columns: repeat(3, 1fr);
-        margin: 0 40px;
+        margin: 0 40px 120px;
     }
 }
 

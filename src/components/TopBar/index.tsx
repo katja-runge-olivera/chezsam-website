@@ -16,9 +16,6 @@ export const TopBar = () => (
                     <Link to="/menu">Menu</Link>
                 </li>
                 <li className={styles.navItem}>
-                    <a href="#reservieren">Reservieren</a>
-                </li>
-                <li className={styles.navItem}>
                     <a href="#about">Über uns</a>
                 </li>
             </ul>
