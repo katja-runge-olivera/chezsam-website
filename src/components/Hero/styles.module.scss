@@ -1,6 +1,7 @@
 @use '../../styles/constants.scss' as *;
 
 .root {
+    position: relative;
     display: flex;
     flex-direction: column-reverse;
     background-color: $mainBackgroundColor;
@@ -10,14 +11,18 @@
     @media (min-width: 991px) {
         flex-direction: row;
         justify-content: space-between;
-        padding: 20px 40px 100px;
+        padding: 60px 40px 120px;
     }
 }
 
 .content {
     align-self: center;
+    padding-top: 120px;
 
     @media (min-width: 768px) {
+    }
+
+    @media (min-width: 991px) {
         width: 40%;
         padding: 0 35px;
     }
@@ -28,8 +33,14 @@
         max-width: 200px;
         max-height: 200px;
         padding-top: 40px;
+        position: absolute;
+        z-index: 2;
+        top: 270px;
+        left: 0;
+        right: 0;
 
         @media (min-width: 991px) {
+            position: initial;
             padding-top: 0;
             max-width: 250px;
             max-height: 250px;

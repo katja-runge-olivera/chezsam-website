@@ -9,9 +9,10 @@
     background-color: $mainBackgroundColor;
     position: fixed;
     z-index: 1;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 
     @media (min-width: 768px) {
-        padding: 20px 40px;
+        padding: 30px 40px;
     }
 }
 
@@ -36,20 +37,23 @@
             width: 40px;
         }
     }
-
 }
 
 .navList {
     display: flex;
     align-items: center;
     height: 100%;
+
+    :first-child {
+        padding-left: 0;
+    }
 }
 
 .navItem {
+    padding: 0 40px;
+
     a {
         text-decoration: none;
-        margin-right: 20px;
         color: $textColor;
     }
-
 }
