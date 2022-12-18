@@ -1,0 +1,21 @@
+$screen-small-min: 576px;
+$screen-medium-min: 768px;
+$screen-large-min: 992px;
+
+@mixin breakpointSmall {
+    @media (min-width: #{$screen-small-min}) {
+        @content;
+    }
+}
+
+@mixin breakpointMedium {
+    @media (min-width: #{$screen-medium-min}) {
+        @content;
+    }
+}
+
+@mixin lg {
+    @media (min-width: #{$screen-large-min}) {
+        @content;
+    }
+}
