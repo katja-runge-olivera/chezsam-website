@@ -1,5 +1,3 @@
-@use '../../styles/breakpoints.scss' as *;
-
 .button {
     display: block;
     padding: 15px 20px;
@@ -7,13 +5,15 @@
     color: #fff;
     font-size: 14px;
 
-    @include md {
+    @media (min-width: 768px) {
         padding: 20px 40px;
     }
+
+
 }
 
 .buttonRed {
-    background-color: #c51131;
+    background-color: #C51131;
 }
 
 .buttonGhost {

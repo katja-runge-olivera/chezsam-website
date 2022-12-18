@@ -1,12 +1,28 @@
-@use '../../styles/breakpoints.scss' as *;
+@use '../../styles/index.scss' as *;
 
 .root {
     display: grid;
     margin-top: 50px;
     grid-gap: 20px 40px;
+    margin: 0 20px;
 
-    @include md {
+    @media (min-width: 768px) {
         grid-template-columns: repeat(3, 1fr);
+        margin: 0 40px;
+    }
+}
+
+.column {
+    box-sizing: border-box;
+    margin-bottom: 50px;
+
+    @media (min-width: 768px) {
+        margin-right: 20px;
+        margin-bottom: 0;
+    }
+
+    @media (min-width: 1080px) {
+        margin-right: 40px;
     }
 }
 
@@ -15,11 +31,11 @@
     flex: 1;
     margin-top: 40px;
 
-    @include md {
+    @media (min-width: 768px) {
         font-size: 20px;
     }
 
-    @include lg {
+    @media (min-width: 1080px) {
         font-size: 30px;
         margin-top: 40px;
     }

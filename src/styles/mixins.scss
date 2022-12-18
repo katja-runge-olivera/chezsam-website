@@ -6,7 +6,7 @@
     padding: 20px;
     box-sizing: border-box;
 
-    @include md {
+    @include breakpointMedium {
         padding-left: 60px;
         padding-right: 60px;
     }

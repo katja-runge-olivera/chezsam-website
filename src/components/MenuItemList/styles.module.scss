@@ -6,7 +6,7 @@
     display: grid;
     grid-gap: $stdOffset;
 
-    @include md {
+    @include breakpointMedium {
         grid-template-columns: repeat(2, 1fr);
     }
 }

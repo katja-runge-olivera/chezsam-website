@@ -1,20 +1,23 @@
 @use '../../styles/constants.scss' as *;
-@use '../../styles/breakpoints.scss' as *;
 
 .root {
     display: flex;
     flex-direction: column-reverse;
+    background-color: $mainBackgroundColor;
+    height: 100%;
+    padding: 40px 20px 60px;
 
-    @include lg {
+    @media (min-width: 991px) {
         flex-direction: row;
         justify-content: space-between;
+        padding: 20px 40px 100px;
     }
 }
 
 .content {
     align-self: center;
 
-    @include md {
+    @media (min-width: 768px) {
         width: 40%;
         padding: 0 35px;
     }
@@ -26,13 +29,13 @@
         max-height: 200px;
         padding-top: 40px;
 
-        @include lg {
+        @media (min-width: 991px) {
             padding-top: 0;
             max-width: 250px;
             max-height: 250px;
         }
 
-        @include lg {
+        @media (min-width: 1080px) {
             max-width: 300px;
             max-height: 300px;
         }
@@ -50,11 +53,11 @@
         line-height: 125%;
         padding-top: 20px;
 
-        @include md {
+        @media (min-width: 768px) {
             font-size: 28px;
         }
 
-        @include lg {
+        @media (min-width: 991px) {
             padding-top: 40px;
             font-size: 38px;
         }
@@ -71,14 +74,14 @@
         color: $textColor;
         padding-top: 10px;
 
-        @include md {
+        @media (min-width: 768px) {
             width: 80%;
             padding-top: 20px;
             margin: 0 auto;
             font-size: 18px;
         }
 
-        @include lg {
+        @media (min-width: 1080px) {
             font-size: 20px;
         }
     }
@@ -88,7 +91,7 @@
     width: 100%;
     height: 100%;
 
-    @include lg {
+    @media (min-width: 991px) {
         align-self: center;
         width: 60%;
     }
@@ -97,7 +100,7 @@
         height: 350px;
         object-position: top;
 
-        @include lg {
+        @media (min-width: 991px) {
             height: auto;
         }
     }
